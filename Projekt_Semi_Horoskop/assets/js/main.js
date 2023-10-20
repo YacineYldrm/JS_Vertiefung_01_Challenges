@@ -7,7 +7,7 @@
 // sternzeichen array
 const zodiacSign = ["aquarius", "pisces", "aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn"];
 
-const invalidMonth = document.body.querySelector('#invalidValue');
+const infoDisplay = document.body.querySelector('#invalidValue');
 
 // Funtkion für User Input (three first letters of the month of birth)
 function showHoroscope()
@@ -74,13 +74,12 @@ function showHoroscope()
     }
     else
     {
-        invalidMonth.textContent = "Please enter valid month."
+        infoDisplay.textContent = "Please enter valid month."
         return false;
     }
 
-    invalidMonth.textContent = "Dein Horoskop:";
+    infoDisplay.textContent = "Dein Horoskop:";
 
     // content auf der Webseite ausgeben
-    horContent = document.body.querySelector(`.horoscope_${zodiacSign[i]}`);
-    horContent.classList.add('showContent');
+    document.body.querySelector(`.horoscope_${zodiacSign[i]}`).classList.add('showContent');
 }
