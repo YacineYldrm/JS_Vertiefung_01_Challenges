@@ -9,7 +9,7 @@ const zodiacSign = ["aquarius", "pisces", "aries", "taurus", "gemini", "cancer",
 
 const infoDisplay = document.body.querySelector('#invalidValue');
 
-// Funtkion für User Input (three first letters of the month of birth)
+// Funktion für User Input (three first letters of the month of birth)
 function showHoroscope()
 {
     let i = 0;
@@ -40,7 +40,7 @@ function showHoroscope()
     {
         i = 3;
     }
-    else if (monthInput === "mai")
+    else if (monthInput === "mai" || monthInput === "may")
     {
         i = 4;
     }
