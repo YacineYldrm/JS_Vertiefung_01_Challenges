@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipp-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="calc_wrapper">
+        <h1>Trinkgeldrechner</h1>
+        <form onsubmit="return false">
+            <div>
+                <p>Wie hoch ist die Rechnung?</p>
+                <input type="number" step="0.01" name="billAmount" id="billAmount" placeholder="€">
+            </div>
+            <div>
+                <p>Wie viele Personen teilen sich die Rechnung?</p>
+                <input type="number" name="numPerson" id="numPerson">
+            </div>
+            <div>
+                <select onchange="getTippAmount()" name="serviceQuality" id="serviceQuality">
+                    <option value="" disabled selected>Wie gut war der Service?</option>
+                    <option value="0.02">Schlecht! (2%)</option>
+                    <option value="0.1">Gut! (10%)</option>
+                    <option value="0.2">Sehr gut! (20%)</option>
+                </select>
+            </div>
+            <div>
+                <button onclick="calcFinalAmount()">Berechnen</button>
+            </div>
+            <div>
+                <p id="tipp">Trinkgeld</p>
+                <p id="totalAmount">Gesamtbetrag</p>
+                <p id="amountEeachPer">Betrag pro Person</p>
+            </div>
+        </form>
+        
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

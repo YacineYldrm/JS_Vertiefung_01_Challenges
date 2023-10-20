@@ -1,0 +1,29 @@
+body
+{
+    width: 100vw;
+}
+
+.counter_wrapper
+{
+    max-width: 400px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(purple, pink);
+    gap: 24px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+}
+
+.counter_wrapper p 
+{
+    font-size: 24px;
+}
+
+.counter_wrapper div button
+{
+    padding: 16px 0;
+    width: 80px;
+    margin-right: 16px;
+}

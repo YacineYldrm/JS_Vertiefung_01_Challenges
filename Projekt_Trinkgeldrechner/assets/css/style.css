@@ -1,0 +1,36 @@
+body 
+{
+    width: 100vw;
+}
+
+.calc_wrapper 
+{
+    font-family: sans-serif;
+    max-width: 600px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(231, 80, 231), pink);
+    gap: 16px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 25px;
+}
+
+.calc_wrapper h1
+{
+    font-weight: 400;
+}
+
+.calc_wrapper form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calc_wrapper form div input, select
+{
+    width: 400px;
+}
